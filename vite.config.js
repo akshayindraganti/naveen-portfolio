@@ -1,15 +1,15 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: '/profile', // ✅ Ensure this matches your GitHub Pages repository name
+  base: "./", // ✅ Ensure this matches your GitHub Pages repository name
   plugins: [react()],
   css: {
     modules: {
-      localsConvention: 'camelCase',
+      localsConvention: "camelCase",
     },
   },
   build: {
-    outDir: 'dist', // ✅ Ensure Vite outputs to "dist"
+    outDir: "dist", // ✅ Ensure Vite outputs to "dist"
   },
 });
